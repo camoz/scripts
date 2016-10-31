@@ -100,7 +100,7 @@ printf "0: %.8x" $(echo -n "${description}" | wc -c) | xxd -r -g0 >> "${imageWit
 #Description (n * 8)
 echo -n "${description}" >> "${imageWithHeader}"
 
-#Picture with <32>
+#Picture width <32>
 printf "0: %.8x" 0 | xxd -r -g0  >> "${imageWithHeader}"
 
 #Picture height <32>
